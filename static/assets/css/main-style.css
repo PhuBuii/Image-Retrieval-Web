@@ -1,0 +1,286 @@
+/* optional */
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Maven Pro", sans-serif;
+  background-image: white;
+  position: relative;
+}
+.container-page {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container-search {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 75%;
+  height: 600px;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 30px;
+  display: inline-block;
+  left: auto;
+  right: auto;
+}
+.web-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-img {
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  font-weight: 700;
+}
+.content-body {
+  background-color: white;
+}
+.web-body {
+  margin: 0px 50px;
+  padding-bottom: 20px;
+}
+
+.web-body-query,
+.web-body-result {
+  background-color: rgba(238, 236, 236, 0.406);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.web-footer {
+  font-style: italic;
+  font-weight: 100;
+  font-size: small;
+}
+
+.space {
+  margin-top: 15px;
+}
+
+/* image area and preview */
+.image-container {
+  padding: 20px;
+  width: calc(75% - 10px);
+  height: calc(100% - 080px);
+  border-right: 1px solid rgba(0, 0, 0, 0.239);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.239);
+}
+.image-workspace {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.preview-container {
+  border: 2px solid rgba(0, 0, 0, 0.239);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 263px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-cover {
+  overflow: hidden;
+}
+.preview-container span {
+  position: absolute;
+  top: 66px;
+  left: 70px;
+}
+/* shift button */
+.side-controls-shifter {
+  position: absolute;
+  right: 20px;
+  top: 177px;
+  user-select: none;
+}
+.side-controls-shifter svg {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.129);
+  border-bottom: 1px solid transparent;
+  border-radius: 3px;
+  fill: black;
+}
+.side-controls-shifter .active {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+/* side control */
+.side-control-page-1 {
+  position: absolute;
+  right: 20px;
+  bottom: 116px;
+  user-select: none;
+  width: 267px;
+  top: 170px;
+}
+.side-control-page-1 span {
+  display: block;
+  font-size: 13px;
+}
+.side-control-page-1 li {
+  list-style: none;
+  height: auto;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 6px;
+  position: relative;
+}
+.side-control-page-1 li svg {
+  position: relative;
+  display: inline;
+  border-radius: 50%;
+  padding: 4px;
+  transition-duration: 0.4s;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  fill: black;
+  background-color: rgba(0, 0, 0, 0.129);
+}
+.side-control-page-1 li svg:active {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.side-control-page-1 li svg:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.side-control-page-1 .zoom,
+.side-control-page-1 .rotate,
+.side-control-page-1 .flip,
+.side-control-page-1 .move {
+  padding-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.239);
+  height: 64px;
+}
+
+.move li {
+  height: 45px;
+  width: 45px;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* action button */
+.action-button {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+.top,
+.bot {
+  display: flex;
+}
+.action-button .upload,
+.action-button .find,
+.action-button .form-select,
+.action-button .crop {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.129);
+  color: black;
+  border-radius: 3px;
+  outline: none;
+  transition-duration: 0.2s;
+  font-family: "Maven Pro", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.action-button .upload:active,
+.action-button .find:active,
+.action-button .form-select:active,
+.action-button .crop:active {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.action-button .upload:hover,
+.action-button .find:hover,
+.action-button .form-select:hover,
+.action-button .crop:hover
+{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+/* bottom control */
+.bottom-control {
+  user-select: none;
+  display: inline-block;
+  margin-left: 260px;
+}
+.bottom-control .ctrl-cropper,
+.bottom-control .lock,
+.bottom-control .drag-mode {
+  display: inline-block;
+  width: 165px;
+  height: 99px;
+  border-left: 1px solid rgba(0, 0, 0, 0.239);
+}
+
+.bottom-control span {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  padding-bottom: 16px;
+}
+.bottom-control li {
+  list-style: none;
+  display: inline;
+  margin-left: 18%;
+}
+.bottom-control li svg {
+  position: relative;
+  display: inline;
+  border-radius: 50%;
+  padding: 4px;
+  transition-duration: 0.4s;
+  background-color: rgba(0, 0, 0, 0.129);
+  border: 1px solid transparent;
+  fill: black;
+}
+.bottom-control li svg:active {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.bottom-control li svg:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+svg {
+  height: 35px;
+  width: 35px;
+}
+#crop-table {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
