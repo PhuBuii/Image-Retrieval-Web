@@ -17,9 +17,6 @@ Báo cáo nhóm bao gồm các folder sau:
 
 Các bước để chạy model: 
 Bước 1: Trích xuất feature image: Có 2 cách để trích xuất feature image:
-	  a. Tải Dataset Oxford Building và đưa vào folder img. Sau đó, chạy file indexing. 
-	  b. Truy cập link: 
-https://drive.google.com/drive/folders/1JMnhQVoex3oqMkhB4FK-B6Tqqo1_glcS?usp=share_link 
-	     để tải feature và img đã chạy sẵn.
+	  Tải Dataset Oxford Building và đưa vào folder img. Sau đó, chạy file indexing. 
 Bước 2: Mở terminal tại folder "Image_Retrieval", sau đó chạy lệnh "flask run" 
 Bước 3: Sử dụng localhost có được sau khi chạy bước 2 để thử và xem kết quả. 
