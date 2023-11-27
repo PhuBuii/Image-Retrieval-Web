@@ -20,3 +20,6 @@ Bước 1: Trích xuất feature image:
 	  Tải Dataset Oxford Building và đưa vào folder img. Sau đó, chạy file indexing. 
 Bước 2: Mở terminal tại folder "Image_Retrieval", sau đó chạy lệnh "flask run" 
 Bước 3: Sử dụng localhost có được sau khi chạy bước 2 để thử và xem kết quả. 
+
+
+Bạn có thể tham khảo demo tại [đây](https://drive.google.com/file/d/1FeUJPsvgnFQC97nEgTdwNBPyfo--pQGw/view?usp=drive_link)
